@@ -13,7 +13,9 @@ A production-grade retail management system that helps store owners manage produ
 * 📦 Product & Category Management
 * 👥 Customer Management
 * 🧾 Billing & Invoice Generation
-* 🎯 Offers & Discounts
+* 📧 Send invoice via email after billing
+* 🎯 Offers & Discounts Management
+* 📩 Email notifications for offers
 * 📊 Dashboard Analytics
 
 ---

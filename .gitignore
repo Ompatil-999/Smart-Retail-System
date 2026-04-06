@@ -1,0 +1,11 @@
+.env
+.env.local
+.env.*.local
+application-local.yml
+application-*.properties
+*.key
+*.jks
+node_modules/
+.DS_Store
+dist/
+build/

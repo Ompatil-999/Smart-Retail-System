@@ -1,58 +1,110 @@
-# SmartRetail — Multi-Store Retail SaaS
+# 🛒 Smart Retail System
 
-A production-grade multi-store retail management SaaS platform built with **Spring Boot** and **React**.
+### Full-Stack Multi-Store Retail Management SaaS
 
-## Tech Stack
+A production-grade retail management system that enables store owners to manage products, customers, billing, and offers efficiently using a centralized platform.
 
-| Layer     | Technology                            |
-|-----------|---------------------------------------|
-| Frontend  | React 18, Tailwind CSS v4, Axios      |
-| Backend   | Java 17, Spring Boot 3.2, Spring Security, JPA |
-| Database  | MySQL 8+                              |
-| Auth      | JWT (stateless)                       |
-| Email     | Spring Boot Mail (SMTP)               |
+---
 
-## Prerequisites
+## 🚀 Features
 
-- **Java 17+** (JDK)
-- **Maven 3.8+**
-- **Node.js 18+** & **npm**
-- **MySQL 8+** running locally
+* 🔐 JWT Authentication (Login/Register)
+* 🏪 Multi-store support (tenant-based architecture)
+* 📦 Product & Category Management
+* 👥 Customer Management
+* 🧾 Billing & Invoice Generation
+* 🎯 Offers & Discounts
+* 📊 Dashboard Analytics
 
-## Setup Instructions
+---
 
-### 1. Database
+## 🛠 Tech Stack
+
+### Backend
+
+* Java 17
+* Spring Boot
+* Spring Security (JWT)
+* Hibernate / JPA
+
+### Frontend
+
+* React (Vite)
+* Tailwind CSS
+* Axios
+
+### Database
+
+* MySQL
+
+### Tools
+
+* Maven
+* Postman (API Testing)
+* Git & GitHub
+
+---
+
+## 📸 Screenshots
+
+### Billing System
+
+![Billing](./screenshots/billing.png)
+
+### Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+## ⚙️ Run Locally
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/Ompatil-999/Smart-Retail-System.git
+cd Smart-Retail-System
+```
+
+---
+
+### 2. Database Setup
 
 ```bash
 mysql -u root -p < schema.sql
 ```
 
-### 2. Backend Configuration
+---
 
-Edit `backend/src/main/resources/application.yml`:
+### 3. Environment Variables
 
-```yaml
-spring:
-  datasource:
-    url: jdbc:mysql://localhost:3306/smart_retail_db
-    username: root        # ← your MySQL username
-    password: root        # ← your MySQL password
+Create a `.env` file inside the `backend` folder:
 
-  mail:
-    username: your-email@gmail.com   # ← your Gmail
-    password: your-app-password       # ← Gmail App Password
+```
+DB_USERNAME=your-db-username
+DB_PASSWORD=your-db-password
+
+MAIL_USERNAME=your-email
+MAIL_PASSWORD=your-app-password
+
+JWT_SECRET=your-secret-key
 ```
 
-### 3. Start Backend
+---
+
+### 4. Run Backend
 
 ```bash
 cd backend
 mvn spring-boot:run
 ```
 
-Backend runs on `http://localhost:8080`.
+Backend runs on:
+http://localhost:8080
 
-### 4. Start Frontend
+---
+
+### 5. Run Frontend
 
 ```bash
 cd frontend
@@ -60,35 +112,49 @@ npm install
 npm run dev
 ```
 
-Frontend runs on `http://localhost:5173`.
+Frontend runs on:
+http://localhost:5173
 
-### 5. Use the App
+---
 
-1. Open `http://localhost:5173/register`
-2. Register a new store owner
-3. You'll be redirected to the dashboard
-4. Start managing categories, products, customers, billing, and offers
+## 🔗 API Example
 
-## API Endpoints
+**POST** `/api/v1/auth/login`
 
-| Module     | Method | Endpoint                    | Auth |
-|------------|--------|-----------------------------|------|
-| Register   | POST   | `/api/v1/auth/register`     | ✗    |
-| Login      | POST   | `/api/v1/auth/login`        | ✗    |
-| Dashboard  | GET    | `/api/v1/store/dashboard`   | ✓    |
-| Store      | GET/PUT| `/api/v1/store`             | ✓    |
-| Categories | CRUD   | `/api/v1/categories`        | ✓    |
-| Products   | CRUD   | `/api/v1/products`          | ✓    |
-| Customers  | CRUD   | `/api/v1/customers`         | ✓    |
-| Bills      | GET/POST| `/api/v1/bills`            | ✓    |
-| Offers     | CRUD   | `/api/v1/offers`            | ✓    |
+```json
+{
+  "email": "test@gmail.com",
+  "password": "123456"
+}
+```
 
-## Architecture
+---
+
+## 🧠 Architecture
 
 ```
 Controller → Service → Repository → Entity
-     ↑           ↑          ↑
-    DTO       Mapper     JPA/MySQL
 ```
 
-Every business table includes `store_id` for multi-tenant isolation.
+* Clean layered architecture
+* DTO + Mapper pattern
+* Multi-tenant design using `store_id`
+
+---
+
+## 📌 Project Status
+
+✔ Fully functional (runs locally)
+⚠ Deployment in progress
+
+---
+
+## 👤 Author
+
+**Om Patil**
+
+---
+
+## ⭐ Support
+
+If you found this project useful, consider giving it a star ⭐

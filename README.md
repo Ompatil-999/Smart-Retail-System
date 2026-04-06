@@ -50,7 +50,7 @@ A production-grade retail management system that helps store owners manage produ
 
 ### 🔐 Login Page
 
-![Login](./Screenshots/login .png)
+![Login](./Screenshots/login.png)
 
 ---
 

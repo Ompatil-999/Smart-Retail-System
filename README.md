@@ -50,31 +50,31 @@ A production-grade retail management system that helps store owners manage produ
 
 ### 🔐 Login Page
 
-![Login](./screenshots/login.png)
+![Login](./Screenshots/login.png)
 
 ---
 
 ### 📊 Dashboard
 
-![Dashboard](./screenshots/dashboard.png)
+![Dashboard](./Screenshots/dashboard.png)
 
 ---
 
 ### 🧾 Billing System
 
-![Billing](./screenshots/billing.png)
+![Billing](./Screenshots/billing.png)
 
 ---
 
 ### 📦 Product Management
 
-![Products](./screenshots/product.png)
+![Products](./Screenshots/product.png)
 
 ---
 
 ### 🧾 Invoice Preview
 
-![Invoice](./screenshots/invoice.png)
+![Invoice](./Screenshots/invoice.png)
 
 ---
 

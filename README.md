@@ -2,14 +2,14 @@
 
 ### Full-Stack Multi-Store Retail Management SaaS
 
-A production-grade retail management system that enables store owners to manage products, customers, billing, and offers efficiently using a centralized platform.
+A production-grade retail management system that helps store owners manage products, customers, billing, and invoices efficiently.
 
 ---
 
 ## 🚀 Features
 
 * 🔐 JWT Authentication (Login/Register)
-* 🏪 Multi-store support (tenant-based architecture)
+* 🏪 Multi-store support (tenant-based)
 * 📦 Product & Category Management
 * 👥 Customer Management
 * 🧾 Billing & Invoice Generation
@@ -23,37 +23,58 @@ A production-grade retail management system that enables store owners to manage 
 ### Backend
 
 * Java 17
-* Spring Boot
+* Spring Boot 3.2
 * Spring Security (JWT)
 * Hibernate / JPA
 
 ### Frontend
 
-* React (Vite)
-* Tailwind CSS
+* React 18
+* Vite 5
+* Tailwind CSS v4
 * Axios
 
 ### Database
 
-* MySQL
+* MySQL 8+
 
 ### Tools
 
-* Maven
-* Postman (API Testing)
+* Maven 3.8+
+* Node.js 18+
 * Git & GitHub
 
 ---
 
 ## 📸 Screenshots
 
-### Billing System
+### 🔐 Login Page
+
+![Login](./screenshots/login.png)
+
+---
+
+### 📊 Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+---
+
+### 🧾 Billing System
 
 ![Billing](./screenshots/billing.png)
 
-### Dashboard
+---
 
-![Dashboard](./screenshots/dashboard.png)
+### 📦 Product Management
+
+![Products](./screenshots/product.png)
+
+---
+
+### 🧾 Invoice Preview
+
+![Invoice](./screenshots/invoice.png)
 
 ---
 
@@ -78,7 +99,7 @@ mysql -u root -p < schema.sql
 
 ### 3. Environment Variables
 
-Create a `.env` file inside the `backend` folder:
+Create `.env` inside `backend`:
 
 ```
 DB_USERNAME=your-db-username
@@ -99,8 +120,7 @@ cd backend
 mvn spring-boot:run
 ```
 
-Backend runs on:
-http://localhost:8080
+Backend → http://localhost:8080
 
 ---
 
@@ -112,8 +132,7 @@ npm install
 npm run dev
 ```
 
-Frontend runs on:
-http://localhost:5173
+Frontend → http://localhost:5173
 
 ---
 
@@ -142,7 +161,7 @@ Controller → Service → Repository → Entity
 
 ---
 
-## 📌 Project Status
+## 📌 Status
 
 ✔ Fully functional (runs locally)
 ⚠ Deployment in progress
@@ -157,4 +176,5 @@ Controller → Service → Repository → Entity
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a star ⭐
+If you found this useful, give it a star ⭐
+
